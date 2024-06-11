@@ -6,7 +6,8 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //1000 line 
+            Console.WriteLine("Hello Emin!");
         }
     }
 }
