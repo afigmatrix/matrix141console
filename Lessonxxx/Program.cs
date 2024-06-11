@@ -8,7 +8,7 @@ namespace Lessonxxx
         {
             //1000 line 
             Console.WriteLine("Hello Emin!");
-            Console.WriteLine("Hello");
+            Console.WriteLine("Hello  ");
         }
     }
 }
