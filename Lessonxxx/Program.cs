@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Numerics;
 
 namespace Lessonxxx
@@ -7,10 +8,7 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
-            doWhile();
-
         }
-
 
         #region do-while
         static void doWhile()
@@ -29,7 +27,6 @@ namespace Lessonxxx
             //    }
             //}
             //Console.WriteLine("Value is valid without while");
-            bool run = default;
             do
             {
                 string value2 = Console.ReadLine();
@@ -39,12 +36,12 @@ namespace Lessonxxx
                     break;
                 }
             }
-            while (run);
+            while (true);
           
 
         }
         #endregion
-        #region SwichWhen
+        #region SwitchWhen
         static void SwichWhen()
         {
             string name = "Matrix";
