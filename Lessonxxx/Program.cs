@@ -67,7 +67,7 @@ namespace Lessonxxx
 
         }
 
-        static int Sum(params int[] numbers)
+        static int Sum(int character,int param2,int age, params int[] numbers)
         {
             int sum = 0;
             for (int i = 0; i < numbers.Length; i++)
