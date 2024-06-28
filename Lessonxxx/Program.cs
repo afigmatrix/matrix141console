@@ -25,18 +25,18 @@ namespace Lessonxxx
 
             string[] newArray = new string[10];
 
+            int newarrayI= 0;
             for (int i = 0; i < splittedData.Length; i++)
             {
                 if (splittedData[i].Length > 5)
                 {
-                    newArray[i] = splittedData[i];
-                    Console.WriteLine($"newArr[{i}] = spliteddData[{i}]");
-                }
-                else
-                {
-                    Console.WriteLine($"newArr[{i}] = null");
 
+                    newArray[newarrayI] = splittedData[i];
+                    Console.WriteLine($"newArr[{newarrayI}] = spliteddData[{i}]");
+                    newarrayI++;
                 }
+                
+             
             }
 
 
