@@ -6,38 +6,112 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Vergul ile ayrilan deyerleri daxil edin !");
-            string userInput = Console.ReadLine();
+            #region
+            animal animal = new animal();
+            animal.height = 100;
+            animal.weight = 12;
+            animal.isWild = true;
+            animal.eyEcolor = "black";
+            animal.run();
+            Console.WriteLine();
 
-            if (!userInput.Contains(','))
+            bird bird = new bird();
+            bird.height = 16;
+            bird.weight = 17;
+            bird.isWild = true;
+            bird.eyEcolor = "blue";
+            bird.ucmaq = true;
+            bird.AbilityToFly();
+
+            Console.WriteLine();
+
+            lion lion = new lion();
+            lion.height = 16;
+            lion.weight = 18;
+            lion.isWild = true;
+            lion.eyEcolor = "brown";
+            lion.king = true;
+            lion.jump();
+
+            Console.WriteLine();
+
+
+        }
+        public class animal
+        {
+
+            public int weight;
+            public int height;
+            public string eyEcolor;
+            public bool isWild;
+            public void run()
             {
-                Console.WriteLine("Duzgun melumat daxil etmediniz!");
-                return;
+                Console.WriteLine(" qacmaq");
+            }
+        }
+
+
+        public class bird : animal
+
+        {
+            public string eyEcolor;
+            public bool isWild;
+            public int weight;
+            public int height;
+            public bool ucmaq;
+
+            public void AbilityToFly()
+            {
+                Console.WriteLine();
             }
 
-            string[] splittedData = userInput.Split(',');
+        }
 
-            if (splittedData.Length > 10)
+        public class lion : animal
+        {
+
+
+            public int weight;
+            public int height;
+            public string eyEcolor;
+            public bool isWild;
+            public bool king;
+
+            public void jump()
             {
-                Console.WriteLine("Duzgun melumat daxil etmediniz!");
-                return;
+                Console.WriteLine();
             }
+            #endregion
+            #region
+            Car car = new Car();
+            
+        }
+        public class Car
+        {
+            public bool İsSport;
+            public string Color;
+            public int DoorCount;
 
-            string[] newArray = new string[10];
-
-            for (int i = 0; i < splittedData.Length; i++)
+            public void start()
             {
-                if (splittedData[i].Length > 5)
-                {
-                    newArray[i] = splittedData[i];
-                    Console.WriteLine($"newArr[{i}] = spliteddData[{i}]");
-                }
-                else
-                {
-                    Console.WriteLine($"newArr[{i}] = null");
 
-                }
             }
+            public void stop()
+            {
+
+            }
+        }
+        public class bmw : Car
+        {
+            bool isModified;
+            string ModificationName;
+            public void moid(string ModificationName)
+            {
+                ModificationName = ModificationName;
+            }
+#endregion
+
+
 
 
         }
