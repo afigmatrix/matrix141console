@@ -6,7 +6,12 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             Console.WriteLine("Hello World!");
+=======
+            
+
+>>>>>>> Stashed changes
         }
     }
 }
