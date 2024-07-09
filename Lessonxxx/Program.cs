@@ -21,7 +21,8 @@ namespace Lessonxxx
             Facebook test = new Facebook("Post");
             test.Comment = "sagol";
             Console.WriteLine(test.Comment);
-           
+            test.Comment = "ispasiba qonshi";
+            Console.WriteLine(test.Comment);
 
 
 
@@ -73,7 +74,7 @@ namespace Lessonxxx
     {
         private string _post;
         private string _comment;
-
+        private bool control = false;
 
         public string Post
         {
@@ -81,18 +82,35 @@ namespace Lessonxxx
             set { _post = value; }
         }
 
-        public string Comment { get { return _comment; } set { _comment = "Xosh geldin"; } }
+        public string Comment
+        {
+            get { return _comment; }
+            set
+            {
+                if (!control)
+                {
+                    _comment = value;
+                    control = true;
+                    Console.WriteLine($"Comment elave edildi: {value}");
+                }
+                else
+                {
+                    Console.WriteLine("Comment bir defe daxil edile biler");
+                }
+            }
+        }
 
         public Facebook(string post)
         {
             this._post = post;
         }
-
+    }
+}
 
     
 
 
         
-    }
-    }
+    
+    
 
