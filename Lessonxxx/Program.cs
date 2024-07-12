@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Lessonxxx
 {
@@ -6,6 +7,10 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
+
+
+
+
             #region Boxing-Unboxing
 
             //// 1) Boxing
@@ -87,6 +92,29 @@ namespace Lessonxxx
             //    return Total;
             //}
             #endregion
+
+            #region Instance sayi
+
+        //    Car car = new Car();
+        //    Car car1 = new Car();
+        //    Car car2 = new Car();
+        //    Car car3 = new Car();
+
+        //    Console.WriteLine(Car.MyCarNum1);
+
         }
+        //public class Car
+        //{
+        //    public static int MyCarNum1 { get; set; }
+        //    public int MyCarNum2 { get; set; }
+
+        //    public  Car()
+        //    {
+        //        MyCarNum1++;
+        //        MyCarNum2++;
+        //    }
+        //}
+        #endregion
+
     }
 }
