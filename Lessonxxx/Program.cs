@@ -32,38 +32,44 @@ namespace Lessonxxx
             //bool unboxedistrue=(bool)boxedistrue;
             #endregion
             #region task2
-            //Object[] arr = new Object[10];
-            //arr[0] = 1;
-            //arr[1] = 'k';
-            //arr[2] = "kitab";
-            //arr[3] = 3.14;
-            //arr[4] = 5;
-            //arr[5] = "qelem";
-            //arr[6] = 2.56;
-            //arr[7] = "defter";
-            //arr[8] = 'a';
-            //arr[9] = 4;
-            //string[] string_arr=new string[10];
-            //int[] int_arr=new int[10];
-            //int int_index = 0;
-            //int string_index = 0;
-            //for(int i = 0; i < arr.Length; i++)
-            //{
-            //    if (arr[i] is int)
-            //    {
-            //        int_arr[int_index] = (int)arr[i];
-            //        Console.Write($"int_arr[{int_index}]:");
-            //        Console.WriteLine(int_arr[int_index]);
-            //        int_index++;
-            //    }
-            //    else if (arr[i] is string)
-            //    {
-            //        string_arr[string_index] = (string)arr[i];
-            //        Console.Write($"string_arr[{string_index}]:");
-            //        Console.WriteLine(string_arr[string_index]);
-            //        string_index++;
-            //    }
-            //}
+            Object[] arr = new Object[10];
+            arr[0] = 1;
+            arr[1] = 'k';
+            arr[2] = "kitab";
+            arr[3] = 3.14;
+            arr[4] = 5;
+            arr[5] = "qelem";
+            arr[6] = 2.56;
+            arr[7] = "defter";
+            arr[8] = 'a';
+            arr[9] = 4;
+            string[] string_arr = new string[10];
+            int[] int_arr = new int[10];
+            int int_index = 0;
+            int string_index = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] is int)
+                {
+                    int_arr[int_index] = (int)arr[i];
+                    Console.Write($"int_arr[{int_index}]:");
+                    Console.WriteLine(int_arr[int_index]);
+                    int_index++;
+                }
+                else
+                {
+                    string_arr[string_index] = arr[i].ToString();
+                    Console.Write($"string_arr[{string_index}]:");
+                    Console.WriteLine(string_arr[string_index]);
+                    string_index++;
+                }
+                /*ele yazanda error verirdi yuxaridaki kimi yazmaq lazimdir.
+                string_arr[string_index] = (string)arr[i];
+                Console.Write($"string_arr[{string_index}]:");
+                Console.WriteLine(string_arr[string_index]);
+                string_index++;*/
+
+            }
             #endregion
             #region task3
             //int Result = default;
