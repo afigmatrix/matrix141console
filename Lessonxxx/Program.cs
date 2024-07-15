@@ -64,54 +64,54 @@ namespace Lessonxxx
 
         //Task2 
         #region
-        //static void Main(string[] args)
-        //{
-        //    Object[] objArr = new Object[10];
-        //    objArr[0] = 11;
-        //    objArr[1] = 2;
-        //    objArr[2] = "Galatasaray";
-        //    objArr[3] = 77;
-        //    objArr[4] = "Academy";
-        //    objArr[5] = 1;
-        //    objArr[6] = 4.7;
-        //    objArr[7] = "Matrix";
-        //    objArr[8] = 5;
-        //    objArr[9] = 10;
+        static void Main(string[] args)
+        {
+            Object[] objArr = new Object[10];
+            objArr[0] = 11;
+            objArr[1] = 2;
+            objArr[2] = "Galatasaray";
+            objArr[3] = 77;
+            objArr[4] = "Academy";
+            objArr[5] = 1;
+            objArr[6] = 4.7;
+            objArr[7] = "Matrix";
+            objArr[8] = 5;
+            objArr[9] = 10;
 
-        //    int[] intArr = new int[objArr.Length];
-        //    string[] StringArr = new string[objArr.Length];
+            int[] intArr = new int[objArr.Length];
+            string[] StringArr = new string[objArr.Length];
 
-        //    int intIndex = 0;
-        //    int StringIndex = 0;
+            int intIndex = 0;
+            int StringIndex = 0;
 
-        //    foreach (object item in objArr)
-        //    {
-        //        if (item is int)
-        //        {
-        //            intArr[intIndex] = (int)item;
-        //            intIndex++;
-        //        }
-        //        else if (item is string)
-        //        {
-        //            StringArr[StringIndex] = item as string;
-        //            StringIndex++;
-        //        }
+            foreach (object item in objArr)
+            {
+                if (item is int)
+                {
+                    intArr[intIndex] = (int)item;
+                    intIndex++;
+                }
+                else if (item is string)
+                {
+                    StringArr[StringIndex] = item as string;
+                    StringIndex++;
+                }
 
-        //    }
+            }
 
-        //    Console.WriteLine("intArr");
-        //    for (int i = 0; i < intIndex; i++)
-        //    {
-        //        Console.WriteLine(intArr[i]);
-        //    }
-        //    Console.WriteLine("stringArr");
-        //    for (int i = 0; i < StringIndex; i++)
-        //    {
-        //        Console.WriteLine(StringArr[i]);
+            Console.WriteLine("intArr");
+            for (int i = 0; i < intIndex; i++)
+            {
+                Console.WriteLine(intArr[i]);
+            }
+            Console.WriteLine("stringArr");
+            for (int i = 0; i < StringIndex; i++)
+            {
+                Console.WriteLine(StringArr[i]);
 
-        //    }
+            }
 
-        //}
+        }
         #endregion
 
         //Task3
