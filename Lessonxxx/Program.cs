@@ -32,11 +32,11 @@ namespace Lessonxxx
         }
         public class Rabbit : Animal
         {
-            public void Run()
+            public override void Run()
             {
                 Console.WriteLine("Rabbit runs");
             }
-            public void Eat()
+            public override void Eat()
             {
                 Console.WriteLine("Rabbit eats");
             }
@@ -44,22 +44,22 @@ namespace Lessonxxx
         }
         public class Dog : Animal
         {
-            public void Run()
+            public override void Run()
             {
                 Console.WriteLine("Dog runs");
             }
-            public void Eat()
+            public override void Eat()
             {
                 Console.WriteLine("Dog eats");
             }
         }
         public class Cat : Animal
         {
-            public void Run()
+            public override void Run()
             {
                 Console.WriteLine("Cat runs");
             }
-            public void Eat()
+            public override void Eat()
             {
                 Console.WriteLine("Cat eats");
             }
