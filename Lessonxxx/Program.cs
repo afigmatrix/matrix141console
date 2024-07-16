@@ -9,4 +9,21 @@ namespace Lessonxxx
             Console.WriteLine("Hello World!");
         }
     }
+    public class Animal
+    {
+        public void Eat() { }
+        public void Run() { }
+    }
+    public class Rabbit
+    {
+
+    }
+    public class Dog
+    {
+
+    }
+    public class Cat
+    {
+
+    }
 }
