@@ -13,7 +13,7 @@ namespace Lessonxxx
             Cat cat = new Cat();
             characteristic(dog);
 
-            Console.WriteLine("*************************************************************");
+            Console.WriteLine("************************************************************=*");
 
             BMW bmw = new BMW();
             Audi audi = new Audi();
