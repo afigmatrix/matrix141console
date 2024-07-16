@@ -24,6 +24,6 @@ namespace Lessonxxx
     }
     public class Cat
     {
-
+        
     }
 }
