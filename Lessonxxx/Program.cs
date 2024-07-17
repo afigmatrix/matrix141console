@@ -6,6 +6,8 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
+            #region Task
+
             Rabbit rabbit = new Rabbit();
             rabbit.Run();
             rabbit.Eat();
@@ -18,28 +20,22 @@ namespace Lessonxxx
             cat.Run();
             cat.Eat();
 
-            Car mercedes = new Mercedes { DoorCount = 2, ColorName = "White" };
+            Car mercedes = new Mercedes (4,"White");
             mercedes.Gas();
             mercedes.Break();
             mercedes.FlashOptimizer();
 
-            Car bmw = new BMW { DoorCount = 4, ColorName = "Black" };
+            Car bmw = new BMW (2,"Black");
             bmw.Gas();
             bmw.Break();
             bmw.FlashOptimizer();
 
         }
 
-        public class Animal
+        public abstract class Animal
         {
-            public virtual void Run()
-            {
-                Console.WriteLine();
-            }
-            public virtual void Eat()
-            {
-                Console.WriteLine();
-            }
+            public abstract void Run();
+            public abstract void Eat();
         }
         public class Rabbit : Animal
         {
@@ -83,7 +79,6 @@ namespace Lessonxxx
     {
         public int DoorCount { get; set; }
         public string ColorName { get; set; }
-
         public virtual void Gas()
         {
             Console.WriteLine("Normal suretlenen");
@@ -101,6 +96,11 @@ namespace Lessonxxx
     }
     public class Mercedes : Car
     {
+        public Mercedes(int doorCount, string colorName)
+        {
+            DoorCount = doorCount;
+            ColorName = colorName;
+        }
         public override void Gas()
         {
             Console.WriteLine("Mercedes Specific gas");
@@ -117,6 +117,11 @@ namespace Lessonxxx
     }
     public class BMW : Car
     {
+        public BMW(int  doorCount, string colorName)
+        {
+            DoorCount=doorCount;
+            ColorName = colorName;
+        }
         public override void Gas()
         {
             Console.WriteLine("Sport gas");
@@ -128,8 +133,12 @@ namespace Lessonxxx
         public override void FlashOptimizer()
         {
             Console.WriteLine("BMW flash optimizer");
-
+            
         }
+        #endregion
+
+
+
     }
 }
 
