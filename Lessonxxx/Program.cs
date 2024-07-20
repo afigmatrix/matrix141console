@@ -9,7 +9,7 @@ namespace Lessonxxx
     {
         static void Main(string[] args)
         {
-            #region MyRegion
+            #region try-catch-finally
             //Console.WriteLine("Hello World!");
             //int num1 = 8;
             //int zero = 0;
