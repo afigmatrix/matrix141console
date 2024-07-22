@@ -17,7 +17,7 @@ namespace Lessonxxx
             //Müxtəlif nəqliyyat vasitələrini təmsil edən IVehicle interfeysini yaradın və bu interfeysi tətbiq edən Car,
             //Bicycle, və Boat siniflərini yaradaraq hər bir sinifin ortaq xüsusiyyətlərini göstərən metodlar əlavə edin.
             //Sonra hər bir class a aid imterface lər yaradın və yalnız o classa məxsus xüsusiyyətləri öz interface də verib implememt edin
-            #region task2
+             #region task2
             Boat boat = new Boat();
             boat.Start();
             boat.Stop();
