@@ -51,9 +51,6 @@ namespace Lessonxxx
         #endregion
 
 
-
-
-
         #region interface
 
         public interface IVehicle
