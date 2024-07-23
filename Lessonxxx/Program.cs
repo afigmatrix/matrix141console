@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace Lessonxxx
 {
@@ -60,6 +61,10 @@ namespace Lessonxxx
             //}
             #endregion
             #region task3
+            //Bir neçə şəxsin adları və telefon nömrələrini saxlayan bir Dictionary yaradın.İstifadəçidən ad və telefon nömrəsi qəbul edərək telefon
+            //kitabçasına əlavə edən və müəyyən bir adı daxil etdikdə telefon nömrəsini tapan bir proqram yazın.
+            //Dictionary<string, string> istifadə edin.
+
             //Dictionary<string, string> dic = new Dictionary<string, string>()
             //{
             //    { "Turkay", "123456" },
@@ -92,6 +97,10 @@ namespace Lessonxxx
             //}
             #endregion
             #region task4
+            //Şirkətdə işləyən şəxslərin e-maillərini saxlamaq üçün bir HashSet yaradın.E - mail ünvanlarını əlavə edin və hər hansı bir e-mailin
+            //siyahıda olub-olmadığını yoxlayan bir proqram yazın. Əgər e-mail varsa, "Bu e-mail mövcuddur" mesajı göstərilməlidir.
+            //HashSet<string> istifadə edin.
+
             //HashSet<string> emailSet = new HashSet<string>
             //{
             //    "turkay@example.com",
