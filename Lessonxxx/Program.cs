@@ -24,7 +24,7 @@ namespace Lessonxxx
             {
 
                 int index = int.Parse(input);
-                if (index >= 0 && index <= ints.Length - 1)
+                if (index >= 0 || index <= ints.Length)
                 {
                     index = ints[index];
 
@@ -58,97 +58,97 @@ namespace Lessonxxx
             //     bu səhvi tutub ekrana error mesaj çıxarın. Hər halda,
             //     proqramın sonunda "Hesablama bitdi" mesajı çıxmalıdır.
 
-            Console.WriteLine("Ededleri daxil edin");
+            //Console.WriteLine("Ededleri daxil edin");
 
-            try
-            {
-                var num1 = int.Parse(Console.ReadLine());
-                var num2 = int.Parse(Console.ReadLine());
+            //try
+            //{
+            //    var num1 = int.Parse(Console.ReadLine());
+            //    var num2 = int.Parse(Console.ReadLine());
 
-                if (num1 == num1 && num2 == num2)
-                {
-                    var result = num1 + num2;
-                    Console.WriteLine($"Cavab: {result}");
-                }
-
-
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Error: Yanlis formatli eded daxil etmisiniz!");
-            }
-
-            catch (Exception ex)
-            {
-
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                Console.WriteLine("Hesablama bitdi");
-
-            }
-            #endregion
-
-            #region  Task3
+            //    if (num1 == num1 && num2 == num2)
+            //    {
+            //        var result = num1 + num2;
+            //        Console.WriteLine($"Cavab: {result}");
+            //    }
 
 
-            //Bir neçə şəxsin adları və telefon nömrələrini saxlayan bir Dictionary yaradın.
-            //    İstifadəçidən ad və telefon nömrəsi qəbul edərək
-            //  telefon kitabçasına əlavə edən və müəyyən bir adı daxil etdikdə
-            //telefon nömrəsini tapan bir proqram yazın.
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Error: Yanlis formatli eded daxil etmisiniz!");
+            //}
 
-            //  Dictionary<string, string> istifadə edin.
+            //catch (Exception ex)
+            //{
 
-            Dictionary<string, int> rehber = new Dictionary<string, int>();
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Hesablama bitdi");
 
-            Console.WriteLine("Ad daxil et:");
-            var name = Console.ReadLine();
-            Console.WriteLine("Nomre daxil et:");
-            var num = int.Parse(Console.ReadLine());
-            rehber.Add(name, num);
-            Console.WriteLine("Mueyyen bir ad daxil et:");
-            string Name = Console.ReadLine();
-            if (rehber.ContainsKey(Name))
-            {
-                Console.WriteLine($"{Name}in telefon nomresi:\n{num}");
-            }
-            else
-            {
-                Console.WriteLine($"Rehberde bu ad yoxdur:\n{name}");
-            }
+            //}
+            //#endregion
 
-            #endregion
+            //#region  Task3
 
 
-            #region Tash4
+            ////Bir neçə şəxsin adları və telefon nömrələrini saxlayan bir Dictionary yaradın.
+            ////    İstifadəçidən ad və telefon nömrəsi qəbul edərək
+            ////  telefon kitabçasına əlavə edən və müəyyən bir adı daxil etdikdə
+            ////telefon nömrəsini tapan bir proqram yazın.
+
+            ////  Dictionary<string, string> istifadə edin.
+
+            //Dictionary<string, int> rehber = new Dictionary<string, int>();
+
+            //Console.WriteLine("Ad daxil et:");
+            //var name = Console.ReadLine();
+            //Console.WriteLine("Nomre daxil et:");
+            //var num = int.Parse(Console.ReadLine());
+            //rehber.Add(name, num);
+            //Console.WriteLine("Mueyyen bir ad daxil et:");
+            //string Name = Console.ReadLine();
+            //if (rehber.ContainsKey(Name))
+            //{
+            //    Console.WriteLine($"{Name}in telefon nomresi:\n{num}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Rehberde bu ad yoxdur:\n{name}");
+            //}
+
+            //#endregion
 
 
-            //Şirkətdə işləyən şəxslərin e-maillərini saxlamaq üçün bir HashSet yaradın.
-            //   E - mail ünvanlarını əlavə edin və hər hansı bir e-mailin siyahıda
-            //     olub - olmadığını yoxlayan bir proqram yazın. Əgər e-mail varsa,
-            //     "Bu e-mail mövcuddur" mesajı göstərilməlidir.
+            //#region Tash4
 
-            // HashSet<string> istifadə edin.
 
-            HashSet<string> mail = new HashSet<string>();
+            ////Şirkətdə işləyən şəxslərin e-maillərini saxlamaq üçün bir HashSet yaradın.
+            ////   E - mail ünvanlarını əlavə edin və hər hansı bir e-mailin siyahıda
+            ////     olub - olmadığını yoxlayan bir proqram yazın. Əgər e-mail varsa,
+            ////     "Bu e-mail mövcuddur" mesajı göstərilməlidir.
 
-            mail.Add("Sefer@mail.com");
-            mail.Add("Rza11mail.com");
-            mail.Add("Amil@mail.com");
-            mail.Add("Ehmed22mail.com");
-            mail.Add("Baku/mail.com");
-            Console.WriteLine("E-maili daxil edin:");
-            string EmailYoxla = Console.ReadLine();
+            //// HashSet<string> istifadə edin.
 
-            if (mail.Contains(EmailYoxla))
-            {
-                Console.WriteLine("Bu e-mail movcuddur:");
-            }
-            else
-            {
-                Console.WriteLine("Bu e-mailm movcud deyil.");
-            }
+            //HashSet<string> mail = new HashSet<string>();
+
+            //mail.Add("Sefer@mail.com");
+            //mail.Add("Rza11mail.com");
+            //mail.Add("Amil@mail.com");
+            //mail.Add("Ehmed22mail.com");
+            //mail.Add("Baku/mail.com");
+            //Console.WriteLine("E-maili daxil edin:");
+            //string EmailYoxla = Console.ReadLine();
+
+            //if (mail.Contains(EmailYoxla))
+            //{
+            //    Console.WriteLine("Bu e-mail movcuddur:");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Bu e-mailm movcud deyil.");
+            //}
             #endregion
         }
 
