@@ -7,28 +7,27 @@ namespace Lessonxxx
         static void Main(string[] args)
         {
             #region tapsiriq1
-            //try
-            //{
-            //    int[] IntArr = new int[5];
-            //   int GetArrIndex=Convert.ToInt32(Console.ReadLine());
-            //    if(GetArrIndex>=5)
-            //    {
-            //        throw new IndexOutOfRangeException();
-            //    }
-            //}
-            //catch (IndexOutOfRangeException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //    Console.WriteLine(ex.StackTrace);
-            //}
-            //catch (SystemException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            //finally
-            //{
-            //    Console.WriteLine("her iki halda da calisir");
-            //}
+            try
+            {
+                int[] IntArr = new int[5];
+                int GetArrIndex = Convert.ToInt32(Console.ReadLine());
+                int value = IntArr[GetArrIndex];
+                Console.WriteLine(value);
+
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+            }
+            catch (SystemException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("her iki halda da calisir");
+            }
             #endregion
             #region tapsiriq2
             //string num1 =Console.ReadLine();
