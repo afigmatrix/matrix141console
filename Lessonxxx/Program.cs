@@ -13,31 +13,31 @@ namespace Lessonxxx
             // Hər halda, proqramın sonunda "Element çıxarma prosesi bitdi" mesajı çıxmalıdır.
             // Arrayi normal array olaraq yaradin.
 
-            int[] myArr = new int[5] { 5, 1988, 33, 1905, 1 };
-            Console.WriteLine("Index nomresini daxil edin:");
+            //int[] myArr = new int[5] { 5, 1988, 33, 1905, 1 };
+            //Console.WriteLine("Index nomresini daxil edin:");
 
-            int userInput = int.Parse(Console.ReadLine());
+            //int userInput = int.Parse(Console.ReadLine());
 
-            try
-            {
-                if (userInput > myArr.Length)
-                {
-                    throw new IndexOutOfRangeException();
-                }
-                else
-                {
-                    Console.WriteLine($"Cixarma ugurlu oldu,index deyeri:{myArr[userInput]}");
-                }
+            //try
+            //{
+            //    if (userInput > myArr.Length)
+            //    {
+            //        throw new IndexOutOfRangeException();
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"Cixarma ugurlu oldu,index deyeri:{myArr[userInput]}");
+            //    }
 
-            }
-            catch (IndexOutOfRangeException ex)
-            {
-                Console.WriteLine("Index duzgun daxil edilmedi:" + ex);
-            }
-            finally
-            {
-                Console.WriteLine("Element cixarma prosessi bitdi");
-            }
+            //}
+            //catch (IndexOutOfRangeException ex)
+            //{
+            //    Console.WriteLine("Index duzgun daxil edilmedi:" + ex);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Element cixarma prosessi bitdi");
+            //}
 
             // Bir neçə şəxsin adları və telefon nömrələrini saxlayan bir Dictionary yaradın.
             // İstifadəçidən ad və telefon nömrəsi qəbul edərək telefon kitabçasına əlavə
@@ -102,13 +102,15 @@ namespace Lessonxxx
 
             //    int result = num1 + num2;
             //    Console.WriteLine("Netice:" + result);
-
+                
+            //    throw new FormatException();
+            
             //}
-            //catch (System.FormatException)
-
+            //catch (FormatException ex)
             //{
-            //    throw new FormatException("Yanlish format");
+            //    Console.WriteLine("\"Yanlish format\""+ ex);
             //}
+               
 
             //finally
             //{
