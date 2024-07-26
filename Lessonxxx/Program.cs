@@ -34,11 +34,15 @@ namespace Lessonxxx
             //   LINQ istifadə edərək bu siyahıdan cüt ədədləri seçin.
 
 
-          //List<int> CutEdedler = new List<int> { 1, 2, 4, 5, 7, 8 };
+           // List<int> CutEdedler = new List<int> { 1, 2, 4, 5, 7, 8 };
 
-          //  CutEdedler.Where(x => x % 2 == 0).ToList();
+           //var cut= CutEdedler.Where(x => x % 2 == 0).ToList();
 
-          // Console ??????????????
+
+           // foreach (int cuteded in cut)
+           // {
+           //     Console.WriteLine(cuteded);
+           // }
 
             #endregion
 
@@ -105,7 +109,7 @@ namespace Lessonxxx
             //  Bir ədədlər siyahısı verilib. Lambda ifadəsi və
             //  LINQ istifadə edərək bu ədədlərin ortalamasını hesablayın.
 
-            //List<int> ededler = new List<int> { 2,5,3,7,9,1+3};
+            //List<int> ededler = new List<int> { 2,5,3,7,9,1,3};
 
             //var ortalama = ededler.Average(e => e);
 
