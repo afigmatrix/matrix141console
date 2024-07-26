@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Lessonxxx
 {
@@ -32,12 +34,11 @@ namespace Lessonxxx
             //   LINQ istifadə edərək bu siyahıdan cüt ədədləri seçin.
 
 
-            //List<int> CutEdedler = new List<int> { 1,2,4,5,7,8};
+          //List<int> CutEdedler = new List<int> { 1, 2, 4, 5, 7, 8 };
 
-            //CutEdedler.Where(x => x % 2 == 0).ToList()
+          //  CutEdedler.Where(x => x % 2 == 0).ToList();
 
-            //       .ForEach(Console.WriteLine);
-
+          // Console ??????????????
 
             #endregion
 
@@ -154,7 +155,7 @@ namespace Lessonxxx
 
             //List<string> metn = new List<string> { "Eve getmek","Televizor izlemek","Qac","Masin","Getdiler","Dur","Gelecekler"}; 
 
-            //var metnUzunlugu = metn.Where(a => a.Length > 3).ToList();
+            //var metnUzunlugu = metn.Where(a => a.Length > 5).ToList();
 
             //Console.WriteLine("Uzunlugu 5- den boyuk metn setrleri:");
 
