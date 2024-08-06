@@ -102,22 +102,23 @@ namespace Lessonxxx
 
             //Task10
             #region
-            //List<string> metinSetir = new List<string>()
-            //{
-            //    "Galata",
-            //    "Matrix Academy",
-            //    "Academy",
-            //    "Saray"
+            List<string> metinSetir = new List<string>()
+            {
+                "Galata",
+                "Matrix Academy",
+                "Academy",
+                "Saray"
 
-            //};
 
-            //var setir = metinSetir.Where(m => m.Length > 5);
+            };
 
-            //Console.WriteLine("Metn Setirlerini Filtirlemek: ");
-            //foreach (var metin in setir)
-            //{
-            //    Console.WriteLine(metin);
-            //}
+            var setir = metinSetir.Where(m => m.Length > 5);
+
+            Console.WriteLine("Metn Setirlerini Filtirlemek: ");
+            foreach (var metin in setir)
+            {
+                Console.WriteLine(metin);
+            }
             #endregion
 
         }
